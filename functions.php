@@ -27,7 +27,7 @@
 	// excerpt length control
 	function set_excerpt_length ()
 	{
-		return 30;
+		return 20;
 	}
 
 	// used to edit something

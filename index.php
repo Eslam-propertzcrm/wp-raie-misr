@@ -285,11 +285,11 @@
 					</div>
 					<div class="cp-causes-inner-outer">
 						<div class="cp-masonary-layout">
-							<div class="cp-masonary-item">
-								<?php $my_query = new WP_Query( 'category_name="التمويل الجماعى"' );  ?>
-								<?php if($my_query->have_posts()) : ?>
-									<?php while($my_query->have_posts()) : $my_query->the_post(); ?>
-										<div class="col-xs-12">
+							<?php $my_query = new WP_Query( 'category_name="التمويل الجماعى"' );  ?>
+							<?php if($my_query->have_posts()) : ?>
+								<?php while($my_query->have_posts()) : $my_query->the_post(); ?>
+									<div class="col-xs-12">
+										<div class="cp-masonary-item">
 											<div class="cp-causes-item">
 												<?php if( has_post_thumbnail() ) : ?>
 													<figure class="cp-thumb">
@@ -314,6 +314,7 @@
 												</div>
 											</div>
 										</div>
+									</div>
 									<?php endwhile; ?>
 								<?php else: ?>
 									<h2>عذرا لا يوجد اخبار </h2>
